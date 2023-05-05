@@ -1,0 +1,17 @@
+@import "variables.scss";
+@import "fnsfonts.css";
+
+.gym-services {
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__heading {
+        border: 5px solid rgb(255, 255, 255);
+        border-bottom: 0;
+        width: 450px;
+        margin-left: 10px;
+    }
+}
+

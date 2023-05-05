@@ -1,0 +1,102 @@
+/* colours defined */
+@import "fnsfonts.css";
+:root {
+  /* colours */
+  --main-color-red: #9e2222;
+  --main-color-black: black;
+  --main-color-white: white;
+  --main-overlay-black: rgba(0, 0, 0, 1);
+  --main-underline-red: #B31313;
+  --main-underline-goal: rgba(255,255,255, 1);
+  /* spacers */
+  --spacers-one: 1rem;
+  --spacers-ten: 0.625rem;
+  --spacers-eight: 8.3rem;
+  --spacers-two: 2rem;
+  --spacers-empty: 0rem;
+  --spacers-seven: 7rem;
+  --spacers-point-two: 0.2rem;
+  --spacers-ones: 1.75rem;
+  /* font-family */
+  --font-regular: "Outfit-Regular";
+  /*font-weights */
+  --font-weight-one: 100;
+  --font-weight-two: 200;
+  --font-weight-three: 300;
+  --font-weight-four: 400;
+  --font-weight-five: 500;
+}
+
+.navbar-wrapper {
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.navbar-wrapper__logo-wrap {
+  display: inline-block;
+  max-width: 80px;
+}
+.navbar-wrapper__logo-img {
+  width: 100%;
+}
+.navbar-wrapper__menu {
+  display: flex;
+  list-style-type: none;
+}
+.navbar-wrapper__link {
+  color: var(--main-color-white);
+  padding-right: var(--spacers-point-two);
+  text-decoration: none;
+  font-family: "Outfit-Regular";
+  font-size: 14px;
+  font-weight: 100;
+  font-style: normal;
+  text-align: left;
+  height: 10px;
+  margin: 0 16px;
+}
+.navbar-wrapper__link:hover {
+  text-decoration-thickness: 1.4px;
+  text-decoration-line: underline;
+  text-decoration-color: #B31313;
+  text-underline-offset: 4px;
+  font-weight: bold;
+}
+.navbar-wrapper__content {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 15px;
+  background: linear-gradient(to top, transparent 9%, black 95%);
+}
+.navbar-wrapper__dropdown {
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+  display: none;
+  position: absolute;
+  z-index: 1;
+  font-family: "Outfit-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  margin-top: 5px;
+}
+.navbar-wrapper__dropdown a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.navbar-wrapper .fa {
+  margin-left: 5px;
+}
+
+/*# sourceMappingURL=header.css.map */

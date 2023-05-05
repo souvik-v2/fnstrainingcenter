@@ -1,0 +1,48 @@
+html {
+  background-color: var(--main-color-black);
+  box-sizing: border-box;
+  padding: 0;
+  height: 100%;
+  margin: 0 auto;
+}
+
+body {
+  height: 100%;
+  margin: var(--spacers-empty);
+  color: var(--main-color-white);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.cta {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Outfit-Regular";
+}
+.cta-primary {
+  background-color: #B31313;
+  color: rgb(255, 255, 255);
+  border: solid 1px #B31313;
+  max-height: 34px;
+  padding: 8px 8px;
+}
+.cta-secondary {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border: solid 1px #B31313;
+  max-height: 34px;
+  padding: 8px 8px;
+}
+
+.fns_head__banner {
+  width: 100%;
+  height: auto;
+  margin-top: -50px;
+}
+
+/*# sourceMappingURL=global.css.map */

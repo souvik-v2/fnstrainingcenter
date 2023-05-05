@@ -1,0 +1,126 @@
+@import "variables.scss";
+@import "fnsfonts.css";
+
+.training {
+  &_content {
+    height: 653px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &_image {
+    width: 800px;
+    height: 653px;
+  }
+
+  &_empty_container {
+    width: calc(100% - 800px);
+    background-color: black;
+    position: relative;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &_head {
+    margin-top: 0;
+    color: rgba(255, 255, 255, 1);
+    font-family: "BebasKai";
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &_head_services {
+    display: block;
+    height: 74px;
+    color: rgba(252, 201, 33, 1);
+    font-family: "BebasKai";
+    font-size: 90px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 74px;
+  }
+
+  &_header {
+    padding: 20px 0px 40px 40px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -280px;
+    height: auto;
+  }
+
+  &_desc {
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Outfit-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0px;
+    text-align: left;
+    line-height: 28px;
+  }
+
+  &_slider-left {
+    color: #b31313;
+    position: absolute;
+    bottom: 50%;
+    left: 55px;
+    font-size: 50px;
+    font-weight: 100;
+    cursor: pointer;
+  }
+
+  &_slider-right {
+    color: #b31313;
+    position: absolute;
+    bottom: 50%;
+    right: 55px;
+    font-size: 50px;
+    font-weight: 100;
+    cursor: pointer;
+  }
+
+  & ul {
+    padding-left: 15px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Outfit-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0px;
+    text-align: left;
+    line-height: 36px;
+    height: 108px;
+    margin-top: 10px;
+  }
+
+  & a {
+    background-color: #b31313;
+    text-decoration: none;
+    border: solid 1px #b31313;
+    padding: 8px 12px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Outfit-Regular";
+    font-size: 14px;
+    position: absolute;
+    left: 35px;
+    bottom: -17px;
+    width: 121px;
+  }
+
+  & button i {
+    margin-left: 5px;
+  }
+}

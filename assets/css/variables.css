@@ -1,0 +1,29 @@
+/* colours defined */
+:root {
+  /* colours */
+  --main-color-red: #9e2222;
+  --main-color-black: black;
+  --main-color-white: white;
+  --main-overlay-black: rgba(0, 0, 0, 1);
+  --main-underline-red: #B31313;
+  --main-underline-goal: rgba(255,255,255, 1);
+  /* spacers */
+  --spacers-one: 1rem;
+  --spacers-ten: 0.625rem;
+  --spacers-eight: 8.3rem;
+  --spacers-two: 2rem;
+  --spacers-empty: 0rem;
+  --spacers-seven: 7rem;
+  --spacers-point-two: 0.2rem;
+  --spacers-ones: 1.75rem;
+  /* font-family */
+  --font-regular: "Outfit-Regular";
+  /*font-weights */
+  --font-weight-one: 100;
+  --font-weight-two: 200;
+  --font-weight-three: 300;
+  --font-weight-four: 400;
+  --font-weight-five: 500;
+}
+
+/*# sourceMappingURL=variables.css.map */

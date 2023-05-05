@@ -1,0 +1,117 @@
+@import "variables.css";
+@import "fnsfonts.css";
+
+.goals {
+    position: relative;
+    border: solid 1px black;
+    background-image: url(../images/goals.png);
+    display: flex;
+    height: 402px;
+    justify-content: space-around;
+    background-size: cover;
+    align-items: center;
+
+    &_image_overlay {
+        height: 402px;
+        width: 100%;
+        background: #000;
+        opacity: .8;
+        position: absolute;
+    }
+
+    &_overlay {
+        content: "";
+        opacity: 1;
+        background-color: #B31313;
+        text-decoration: none;
+        width: 410px;
+        height: 118px;
+        position: absolute;
+        right: 0;
+        z-index: 2;
+        top: -78px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__head {
+            opacity: 1;
+            color: rgba(255, 255, 255, 1);
+            font-family: "Outfit-Medium";
+            font-size: 36px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0px;
+            text-align: left;
+            margin: 0px;
+        }
+
+        &_subcontainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &_arrow {
+            color: white;
+            font-size: 35px;
+        }
+
+        &__sub {
+            opacity: 1;
+            color: rgba(255, 255, 255, 1);
+            font-family: "Outfit-Regular";
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: -0px;
+            line-height: 28px;
+            margin: 0px;
+        }
+        }
+
+    &_content {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: top;
+        z-index: 1;
+        margin: 0 auto;
+        gap: 20px;
+
+        &__article {
+            text-align: center;
+            padding: 0px 25px;
+        }
+
+        &__heading {
+            opacity: 1;
+            color: rgba(255, 255, 255, 1);
+            font-family: "Outfit-Medium";
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: -0px;
+            text-align: center;
+            line-height: 31px;
+            text-decoration: underline;
+            text-underline-offset: 8px;
+            text-decoration-color: white;
+
+            &:hover {
+                text-decoration-color: #B31313;
+            }
+        }
+
+        &__para {
+            opacity: 1;
+            margin-top: 31px;
+            color: rgba(255, 255, 255, 1);
+            font-family: var(--font-regular);
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: -0px;
+            text-align: center;
+            line-height: var(--spacers-ones);
+        }
+    }
+}

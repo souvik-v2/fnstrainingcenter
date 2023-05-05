@@ -1,0 +1,203 @@
+@import "variables.css";
+@import "fnsfonts.css";
+
+.footer {
+
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        height: 296px;
+        align-items: center;
+    }
+
+    &_intro {
+        opacity: 1;
+        height: 236px;
+        width: 326px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &_logo {
+            height: 36.66px;
+            width: 76.82px;
+        }
+
+        &_para {
+            opacity: 1;
+            color: rgba(168, 168, 168, 1);
+            font-family: "Outfit-Regular";
+            font-size: 12px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: -0px;
+            text-align: left;
+            line-height: 21px;
+        }
+
+        &_social {
+            display: flex;
+            justify-content: start;
+        }
+
+        &_social ul {
+            display: flex;
+            list-style-type: none;
+            padding-left: 20px;
+            margin-top: 0px;
+            height: 36px;
+            align-items: center;
+        }
+
+        &_head {
+            height: 28px;
+            opacity: 1;
+            color: rgba(255, 255, 255, 1);
+            font-family: "Outfit-Medium";
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: -0px;
+            text-align: left;
+            line-height: 31px;
+        }
+
+        &_social a {
+            height: 18px;
+            color: white;
+            font-size: medium;
+            font-weight: 100;
+            border: none;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+
+        &_copyright {
+            opacity: 0.35691;
+            color: rgba(168, 168, 168, 1);
+            font-family: "Outfit-Regular";
+            font-size: 12px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: -0px;
+            text-align: left;
+            line-height: 21px;
+            height: 21px;
+        }
+    }
+
+    &_vertical {
+        height: 242px;
+        border: 1px solid rgba(151, 151, 151, 1);
+        opacity: 0.388091;
+        margin-top: 20px;
+    }
+
+    &_sitemap {
+        width: 274px;
+        height: 230px;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &_head {
+            margin-top: 0px;
+            height: 28px;
+            opacity: 1;
+            color: rgba(255, 255, 255, 1);
+            font-family: "Outfit-Medium";
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: -0px;
+            text-align: left;
+            line-height: 31px;
+        }
+
+        &_nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &_nav ul {
+            list-style-type: none;
+            padding-left: 0%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        &_nav a {
+            color: rgba(168, 168, 168, 1);
+            text-decoration: none;
+        }
+
+        &_links,
+        &__links {
+            opacity: 1;
+            font-family: "Outfit-Regular";
+            font-size: 12px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: -0px;
+            text-align: left;
+            line-height: 21px;
+            height: 190px;
+        }
+
+        &__links {
+            width: 127px;
+        }
+    }
+
+    &_contact {
+        width: 120px;
+        height: 232px;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &_head {
+            margin-top: 0px;
+            opacity: 1;
+            height: 31px;
+            color: rgba(255, 255, 255, 1);
+            font-family: "Outfit-Medium";
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: -0px;
+            text-align: left;
+            line-height: 31px;
+            margin-bottom: 0px;
+        }
+
+        &_details p {
+            opacity: 1;
+            color: rgba(168, 168, 168, 1);
+            font-family: "Outfit-Regular";
+            font-size: 12px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: -0px;
+            text-align: left;
+            line-height: 21px;
+        }
+
+        &_location,
+        &_phone {
+            margin-top: 20px;
+        }
+    }
+	#scrollToTop {
+        display: none;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        cursor: pointer;
+        z-index: 9;
+		border-radius: 50%;
+	}
+}
