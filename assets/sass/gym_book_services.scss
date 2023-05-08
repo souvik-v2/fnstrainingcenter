@@ -1,0 +1,140 @@
+@import "variables.scss";
+@import "fnsfonts.css";
+
+.book_services {
+
+    &__overlay-icon {
+        color: white;
+        font-size: x-large;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    &__image-wrapper:hover .fade-overlay {
+        opacity: 1;
+    }
+
+    &__content {
+        padding: 70px 0px;
+        position: relative;
+
+        & h2 {
+            color: rgba(255, 255, 255, 1);
+            font-family: "BebasKai";
+            font-size: 50px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        & p {
+            color: rgba(255, 255, 255, 1);
+            font-family: "Outfit-Regular";
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+            line-height: 28px;
+            padding-bottom: 10px;
+
+        }
+    }
+
+    #bookSlider {
+        position: relative;
+      }
+      #bookSlider .MS-content {
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      #bookSlider .MS-content .item {
+        display: inline-block;
+        width: 33.3333%;
+        position: relative;
+        vertical-align: top;
+        overflow: hidden;
+        height: 100%;
+        white-space: normal;
+        padding: 0 20px;
+      }
+      @media (max-width: 991px) {
+        #bookSlider .MS-content .item {
+          width: 50%;
+        }
+      }
+      @media (max-width: 767px) {
+        #bookSlider .MS-content .item {
+          width: 100%;
+        }
+      }
+
+    &__image-wrapper {
+        position: relative;
+    }
+
+    &__images {
+        padding: 0px 70px;
+
+
+        & img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        & h3 {
+            color: rgba(255, 255, 255, 1);
+            font-family: "Outfit-Medium";
+            font-size: 18px;
+            font-weight: 500;
+            text-align: left;
+            line-height: 31px;
+        }
+    }
+
+    &__cta {
+        padding-top: 50px;
+        text-align: center;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+        opacity: 1;
+    }
+
+    &__slider-left {
+        position: absolute;
+        top: 50%;
+        color: #b31313;
+        left: 0;
+        font-size: xx-large;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    &__slider-right {
+        position: absolute;
+        top: 50%;
+        color: #b31313;
+        right: 0;
+        font-size: xx-large;
+        cursor: pointer;
+    }
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(179, 19, 19, 0.633626);
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.fade-overlay {
+    opacity: 0;
+    height: 100%;
+}

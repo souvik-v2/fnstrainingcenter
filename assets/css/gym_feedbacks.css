@@ -1,0 +1,110 @@
+/* colours defined */
+@import "fnsfonts.css";
+:root {
+  /* colours */
+  --main-color-red: #9e2222;
+  --main-color-black: black;
+  --main-color-white: white;
+  --main-overlay-black: rgba(0, 0, 0, 1);
+  --main-underline-red: #B31313;
+  --main-underline-goal: rgba(255,255,255, 1);
+  /* spacers */
+  --spacers-one: 1rem;
+  --spacers-ten: 0.625rem;
+  --spacers-eight: 8.3rem;
+  --spacers-two: 2rem;
+  --spacers-empty: 0rem;
+  --spacers-seven: 7rem;
+  --spacers-point-two: 0.2rem;
+  --spacers-ones: 1.75rem;
+  /* font-family */
+  --font-regular: "Outfit-Regular";
+  /*font-weights */
+  --font-weight-one: 100;
+  --font-weight-two: 200;
+  --font-weight-three: 300;
+  --font-weight-four: 400;
+  --font-weight-five: 500;
+}
+
+.gym_feedbacks {
+  position: relative;
+}
+.gym_feedbacks__slider ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+.gym_feedbacks__slider hr {
+  border: 1px solid white;
+  opacity: 0.9;
+  width: 30px;
+  margin: 1px;
+}
+.gym_feedbacks__slider hr:hover {
+  border: 1px solid #b31313;
+}
+.gym_feedbacks__slider-left {
+  position: absolute;
+  color: #b31313;
+  left: 2%;
+  top: 40%;
+  font-size: 35px;
+}
+.gym_feedbacks__slider-right {
+  position: absolute;
+  color: #b31313;
+  top: 40%;
+  right: 2%;
+  font-size: 35px;
+}
+.gym_feedbacks__text-wrapper {
+  align-items: center;
+}
+.gym_feedbacks__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gym_feedbacks__text {
+  padding: 0px 30px;
+}
+.gym_feedbacks__text p {
+  padding-bottom: 20px;
+  color: rgb(255, 255, 255);
+  font-family: "Outfit-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: center;
+  line-height: 28px;
+}
+.gym_feedbacks__cta {
+  padding: 50px 0px;
+  text-align: center;
+}
+.gym_feedbacks__icon {
+  text-align: center;
+}
+.gym_feedbacks__icon .fa {
+  font-size: 80px;
+}
+.gym_feedbacks #goalSlider {
+  position: relative;
+}
+.gym_feedbacks #goalSlider .MS-content {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.gym_feedbacks #goalSlider .MS-content .item {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  height: 100%;
+  white-space: normal;
+}
+
+/*# sourceMappingURL=gym_feedbacks.css.map */

@@ -6,8 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 
 	<?php wp_head(); ?>
 </head>
 

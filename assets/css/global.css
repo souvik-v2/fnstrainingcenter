@@ -11,10 +11,11 @@ body {
   margin: var(--spacers-empty);
   color: var(--main-color-white);
   overflow-x: hidden;
+  width: 100%;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: calc(100% - 100px);
   margin: 0 auto;
   z-index: 1;
 }
@@ -42,7 +43,39 @@ body {
 .fns_head__banner {
   width: 100%;
   height: auto;
-  margin-top: -50px;
+  margin-top: -55px;
+}
+.fns_head-content {
+  position: absolute;
+  left: 243px;
+  top: 206px;
+}
+.fns_head-content h2 {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  font-family: "BebasKai";
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.fns_head-content h1 {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  color: rgb(252, 201, 33);
+  font-family: "BebasKai";
+  font-size: 90px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 74px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=global.css.map */

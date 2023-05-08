@@ -1,0 +1,116 @@
+/* colours defined */
+@import "fnsfonts.css";
+:root {
+  /* colours */
+  --main-color-red: #9e2222;
+  --main-color-black: black;
+  --main-color-white: white;
+  --main-overlay-black: rgba(0, 0, 0, 1);
+  --main-underline-red: #B31313;
+  --main-underline-goal: rgba(255,255,255, 1);
+  /* spacers */
+  --spacers-one: 1rem;
+  --spacers-ten: 0.625rem;
+  --spacers-eight: 8.3rem;
+  --spacers-two: 2rem;
+  --spacers-empty: 0rem;
+  --spacers-seven: 7rem;
+  --spacers-point-two: 0.2rem;
+  --spacers-ones: 1.75rem;
+  /* font-family */
+  --font-regular: "Outfit-Regular";
+  /*font-weights */
+  --font-weight-one: 100;
+  --font-weight-two: 200;
+  --font-weight-three: 300;
+  --font-weight-four: 400;
+  --font-weight-five: 500;
+}
+
+.custom_program {
+  background-image: url(../images/custom-program.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 100% 100%;
+}
+.custom_program__slider ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: start;
+}
+.custom_program__slider hr {
+  border: 1px solid white;
+  opacity: 0.9;
+  width: 30px;
+  margin: 1px;
+}
+.custom_program__slider hr:hover {
+  border: 1px solid #b31313;
+}
+.custom_program__content {
+  padding: 60px 0px;
+}
+.custom_program h2 {
+  align-items: center;
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  font-family: "BebasKai";
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 0px;
+  margin-bottom: 15px;
+}
+.custom_program__wrapper {
+  display: flex;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 35px;
+}
+.custom_program .athletes_video {
+  max-width: 426px;
+}
+.custom_program__text {
+  width: 480px;
+}
+.custom_program__text ul {
+  list-style-type: none;
+}
+.custom_program__text ul li:nth-of-type(n + 2) {
+  display: none;
+}
+.custom_program__text h3 {
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  font-family: "Outfit-Medium";
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 31px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.custom_program__text p {
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  font-family: "Outfit-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.custom_program__trial_btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=gym_custom_program.css.map */
