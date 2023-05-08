@@ -9,18 +9,23 @@ $timezone_list = fns_timezone_list();
 ?>
 
 <section class="fns_head">
-	<?php
-	if (have_rows('schedule_page_banner_section')) {
-		while (have_rows('schedule_page_banner_section')) {
-			the_row();
+    <?php
+    if (have_rows('page_banner_section')) {
+        while (have_rows('page_banner_section')) {
+            the_row();
 
-			$image = get_sub_field('add_banner_image');
-			$caption_heading = get_sub_field('add_image_caption');
-			$caption_subheading = get_sub_field('add_image_subcaption');
-	?>
-			<img class="fns_head__banner" src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-		<?php } ?>
-	<?php } ?>
+            $image = get_sub_field('add_banner_image');
+            $caption_heading = get_sub_field('add_image_caption');
+            $show_caption = get_sub_field('show_caption');
+    ?>
+			<?php if($show_caption) { ?>
+            <div class="fns_head-content"><?php echo $caption_heading;?></div>
+			<?php } ?>
+            <img class="fns_head__banner" src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+
+    <?php }
+    }
+    ?>
 </section>
 
 <section class="fns_classes">

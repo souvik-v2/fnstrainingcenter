@@ -1,0 +1,150 @@
+/* colours defined */
+@import "fnsfonts.css";
+:root {
+  /* colours */
+  --main-color-red: #9e2222;
+  --main-color-black: black;
+  --main-color-white: white;
+  --main-overlay-black: rgba(0, 0, 0, 1);
+  --main-underline-red: #B31313;
+  --main-underline-goal: rgba(255,255,255, 1);
+  /* spacers */
+  --spacers-one: 1rem;
+  --spacers-ten: 0.625rem;
+  --spacers-eight: 8.3rem;
+  --spacers-two: 2rem;
+  --spacers-empty: 0rem;
+  --spacers-seven: 7rem;
+  --spacers-point-two: 0.2rem;
+  --spacers-ones: 1.75rem;
+  /* font-family */
+  --font-regular: "Outfit-Regular";
+  /*font-weights */
+  --font-weight-one: 100;
+  --font-weight-two: 200;
+  --font-weight-three: 300;
+  --font-weight-four: 400;
+  --font-weight-five: 500;
+}
+
+.book_services__overlay-icon {
+  color: white;
+  font-size: x-large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.book_services__image-wrapper:hover .fade-overlay {
+  opacity: 1;
+}
+.book_services__content {
+  padding: 70px 0px;
+  position: relative;
+}
+.book_services__content h2 {
+  color: rgb(255, 255, 255);
+  font-family: "BebasKai";
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.book_services__content p {
+  color: rgb(255, 255, 255);
+  font-family: "Outfit-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 28px;
+  padding-bottom: 10px;
+}
+.book_services #bookSlider {
+  position: relative;
+}
+.book_services #bookSlider .MS-content {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.book_services #bookSlider .MS-content .item {
+  display: inline-block;
+  width: 33.3333%;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  height: 100%;
+  white-space: normal;
+  padding: 0 20px;
+}
+@media (max-width: 991px) {
+  .book_services #bookSlider .MS-content .item {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .book_services #bookSlider .MS-content .item {
+    width: 100%;
+  }
+}
+.book_services__image-wrapper {
+  position: relative;
+}
+.book_services__images {
+  padding: 0px 70px;
+}
+.book_services__images img {
+  max-width: 100%;
+  height: auto;
+}
+.book_services__images h3 {
+  color: rgb(255, 255, 255);
+  font-family: "Outfit-Medium";
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 31px;
+}
+.book_services__cta {
+  padding-top: 50px;
+  text-align: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+.book_services__slider-left {
+  position: absolute;
+  top: 50%;
+  color: #b31313;
+  left: 0;
+  font-size: xx-large;
+  cursor: pointer;
+  z-index: 1;
+}
+.book_services__slider-right {
+  position: absolute;
+  top: 50%;
+  color: #b31313;
+  right: 0;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(179, 19, 19, 0.633626);
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+}
+
+.fade-overlay {
+  opacity: 0;
+  height: 100%;
+}
+
+/*# sourceMappingURL=gym_book_services.css.map */

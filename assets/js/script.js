@@ -12,7 +12,7 @@
     }
   });
 	let scrollToTop = document.getElementById("scrollToTop");
-  window.onscroll = function () {
+  window.scroll = function () {
     if (
       document.body.scrollTop > 50 ||
       document.documentElement.scrollTop > 50
@@ -30,4 +30,18 @@
       behavior: "smooth",
     });
   });
+
+  $("#bookSlider").multislider({
+    duration: 750,
+    interval: 3000
+  });
+
+  $(".book_services__slider-right").on("click", function (e) {
+    $('#bookSlider').multislider('next');
+  });
+  $(".book_services__slider-left").on("click", function (e) {
+    $('#bookSlider').multislider('prev');
+  });
+
+
 })(jQuery);

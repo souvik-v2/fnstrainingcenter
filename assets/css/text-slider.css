@@ -1,0 +1,18 @@
+/* Slides */
+.custom_program__wrapper .mySlides, .gym_feedbacks__content .gym_feedbacks__text {
+  display: none;
+}
+
+/* Add a background color to the active dot/circle */
+.custom_program__wrapper .active,
+.custom_program__wrapper .dot:hover,
+.gym_feedbacks__content .active,
+.gym_feedbacks__content .dots:hover
+{
+  border: 1px solid rgba(179, 19, 19, 1);
+  cursor: pointer;
+}
+
+.gym_feedbacks__slider-left, .gym_feedbacks__slider-right {
+  cursor: pointer;
+}

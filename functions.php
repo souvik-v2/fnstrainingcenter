@@ -845,7 +845,6 @@ function fns_header_menu($theme_location)
 function fns_enqueue_page_slider_styles()
 {
 	wp_enqueue_style('main-style', get_template_directory_uri() . '/assets/css/style.css');
-	wp_enqueue_script('script-name', get_template_directory_uri() . '/assets/js/script.js', array(), '1.0.0', true);
 
 	if (is_page_template('template-home.php')) {
 		wp_enqueue_style('glide-style', get_template_directory_uri() . '/assets/css/glide.core.min.css');
@@ -856,6 +855,16 @@ function fns_enqueue_page_slider_styles()
 		//wp_enqueue_style('schedule-style', get_template_directory_uri() . '/assets/css/training-schedule.css');
 		wp_enqueue_script('training-schedule', get_template_directory_uri() . '/assets/js/training-schedule.js', array(), '1.0.0', true);
 	}
+
+	if (is_page_template('template-others.php')) {
+		wp_enqueue_style('text-slider', get_template_directory_uri() . '/assets/css/text-slider.css');
+		wp_enqueue_script('text-slider', get_template_directory_uri() . '/assets/js/text-slider.js', array(), '1.0.0', true);
+		wp_enqueue_script('multi-slider', get_template_directory_uri() . '/assets/js/multislider.js', array(), '1.0.0', true);
+		wp_enqueue_script('goal-slider', get_template_directory_uri() . '/assets/js/goal-slider.js', array(), '1.0.0', true);
+	}
+	//End
+	wp_enqueue_script('script-name', get_template_directory_uri() . '/assets/js/script.js', array(), '1.0.0', true);
+
 }
 add_action('wp_enqueue_scripts', 'fns_enqueue_page_slider_styles');
 

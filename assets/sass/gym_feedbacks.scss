@@ -1,0 +1,97 @@
+@import "variables.scss";
+@import "fnsfonts.css";
+
+.gym_feedbacks {
+  position: relative;
+
+  &__slider {
+    & ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+    }
+
+    & hr {
+      border: 1px solid white;
+      opacity: 0.9;
+      width: 30px;
+      margin: 1px;
+    }
+
+    & hr:hover {
+      border: 1px solid #b31313;
+    }
+  }
+
+  &__slider-left {
+    position: absolute;
+    color: #b31313;
+    left: 2%;
+    top: 40%;
+    font-size: 35px;
+  }
+
+  &__slider-right {
+    position: absolute;
+    color: #b31313;
+    top: 40%;
+    right: 2%;
+    font-size: 35px;
+  }
+
+  &__text-wrapper {
+    align-items: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    padding: 0px 30px;
+
+    & p {
+      padding-bottom: 20px;
+      color: rgba(255, 255, 255, 1);
+      font-family: "Outfit-Regular";
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: -0px;
+      text-align: center;
+      line-height: 28px;
+    }
+  }
+
+  &__cta {
+    padding: 50px 0px;
+    text-align: center;
+  }
+
+  &__icon {
+    text-align: center;
+
+    .fa {
+      font-size: 80px;
+    }
+  }
+
+  #goalSlider {
+    position: relative;
+  }
+  #goalSlider .MS-content {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  #goalSlider .MS-content .item {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    height: 100%;
+    white-space: normal;
+  }
+}
